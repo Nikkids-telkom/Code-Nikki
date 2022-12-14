@@ -51,7 +51,7 @@ print(upper)
 
 
 
------MENGGABUNGKAN DAN MEMISAHKAN STRING
+-----MENGGABUNGKAN DAN MEMISAHKAN STRING------
 a = "this is a string"
 a = a.split(" ") 
 print(a)
