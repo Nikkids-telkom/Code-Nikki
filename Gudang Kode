@@ -1,9 +1,8 @@
+--------PERMUTATION
 from itertools import permutations
 string = ""
-
 inp,ang = input().split()
 ang = int(ang)
-
 perm = list(permutations(inp,ang))
 perm2 = ''.join(map(str, (perm)))
 print(perm2)
@@ -12,7 +11,42 @@ print(perm2)
     
     
     
-    
+ -------TUPLE TO STRING-------
 >>> mystring = ' '.join(map(str, (34.2424, -64.2344, 76.3534, 45.2344)))
 >>> print mystring
 34.2424 -64.2344 76.3534 45.2344
+
+
+
+------COMMAND ALPHANUMERIK-------
+masuk = input()
+print(str.isalnum(masuk))
+print(str.isalpha(masuk))
+print(str.isdigit(masuk))
+print(str.islower(masuk))
+print(str.isupper(masuk))
+------NENTUIN ALPHANUMERIK-------
+masuk = input()
+alphanum = False
+alpha = False
+digit = False
+lower = False
+upper = False
+for i in masuk:
+    if i.isalnum():
+        alphanum = True
+        if i.isalpha():
+           alpha = True
+        elif i.isdigit():
+            digit = True
+    if i.islower():
+        lower = True
+    if i.isupper():
+        upper = True
+print(alphanum)
+print(alpha)
+print(digit)
+print(lower)
+print(upper)
+
+
