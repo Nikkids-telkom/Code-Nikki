@@ -1,4 +1,4 @@
---------PERMUTATION
+--------PERMUTATION----------
 from itertools import permutations
 string = ""
 inp,ang = input().split()
@@ -57,4 +57,60 @@ a = a.split(" ")
 print(a)
 a = "-".join(a)
 print (a)
+-----CONTOH-----
+def split_and_join():
+    line = input()
+    line = line.split(" ")
+    join = "-".join(line)
+    return join
+if __name__ == '__main__':
+    result = split_and_join()
+    print(result)
+    
+    
+   
+   
+--------PRODUCTS----------
+from itertools import product
+print (list(product([1,2,3],repeat = 2)))
+print (list(product([1,2,3],[3,4])))
+A = [[1,2,3],[3,4,5]]
+print (list(product(*A)))
+B = [[1,2,3],[3,4,5],[7,8]]
+print (list(product(*B)))
 
+
+
+
+---------CALENDAR---------
+NOTE = MASIH ADA BANYAK FUNCTION CALENDAR, CARI DI INTERNET
+import calendar
+hari,minggu,tahun = (input()).split()
+hari = calendar.weekday(int(tahun),int(hari),int(minggu))
+if hari == 0:
+   print("MONDAY")
+elif hari == 1:
+   print("TUESDAY")
+elif hari == 2:
+   print("WEDNESDAY")
+elif hari == 3:
+   print("THURSDAY")
+elif hari == 4:
+   print("FRIDAY")
+elif hari == 5:
+   print("SATURDAY")
+elif hari == 6:
+   print("SUNDAY")
+   
+   
+   
+ ----------MENGULANG BERAPA KALI INPUT------------
+list = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    list.append(ele)  
+print(list)
+   
+   
+   
