@@ -1,0 +1,18 @@
+from itertools import permutations
+string = ""
+
+inp,ang = input().split()
+ang = int(ang)
+
+perm = list(permutations(inp,ang))
+perm2 = ''.join(map(str, (perm)))
+print(perm2)
+#for i in perm2:
+    #print(i)
+    
+    
+    
+    
+>>> mystring = ' '.join(map(str, (34.2424, -64.2344, 76.3534, 45.2344)))
+>>> print mystring
+34.2424 -64.2344 76.3534 45.2344
