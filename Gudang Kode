@@ -114,3 +114,22 @@ print(list)
    
    
    
+ ---------- MEMECAHKAN INPUTAN PAKE SPASI--------
+masuk = (input())
+masuk = masuk.split(" ")
+ang1 = masuk[0]
+ang2 = masuk[1]
+print(round(int(ang1)/int(ang2)))
+
+
+
+
+
+
+
+-----------CONTOH PENGGUNAAN SORT--------------
+input_integer =(input())
+angka  = input_integer.split(" ")
+angka_sort = angka.sort()
+print(angka[len(angka)-1]+" "+angka[0])
+   
