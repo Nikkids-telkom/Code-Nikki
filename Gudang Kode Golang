@@ -1,3 +1,5 @@
+
+///BELAJAR FUNCTION////
 package main
 import (
 	"fmt"
@@ -17,3 +19,67 @@ func main() {
 	variabel_test2a,variabel_test2b := test2(a,b)
 	fmt.Println(variabel_testa,variabel_testb,"\n",variabel_test2a,variabel_test2b)
 }
+
+
+
+
+
+
+///PROGRAM TIPE KENDARAAN///
+var looping,jumlah,A,B,C int
+	var tipe string
+	fmt.Scan(&looping)
+	for i := 1 ; i <= looping ; i ++ {
+		fmt.Scan(&tipe)
+		if tipe == "A" {
+		 A++
+		 jumlah += 10000
+		} else if tipe == "B" {
+		 B++
+		 jumlah += 23000
+		} else if tipe == "C" {
+		 C++ 
+		 jumlah += 45000
+		}
+	 }  
+	 fmt.Println(jumlah,A,B,C)
+	}
+	
+	
+	
+	
+///MENCARI JUMLAH PELAJAR////	
+var sekolah string
+var jsd,jsmp,jsma,jumlah int
+ for {
+fmt.Scan(&sekolah,&jumlah)
+if sekolah == "sd" {
+jsd += jumlah
+} else if sekolah == "smp" {
+jsmp += jumlah
+} else if sekolah == "sma" {
+jsma += jumlah
+}
+if sekolah == "x" && jumlah == 0 {
+fmt.Println(jsd,jsmp,jsma)
+break
+}
+}
+
+
+
+
+
+
+
+
+////MENJUMLAHKAN BILANGAN KELIPATAN 4/////
+var input,jumlah int
+	fmt.Scan(&input)
+	for input >= 0 {
+      fmt.Scan(&input)
+	  if input % 4 == 0 {
+		jumlah += input
+	  }
+	}
+	fmt.Println("\n",jumlah)
