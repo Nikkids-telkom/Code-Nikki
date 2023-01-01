@@ -1,0 +1,19 @@
+package main
+import (
+	"fmt"
+)
+func test(x, y int) (int,int) {
+	return x + y, x - y
+}
+func test2(x1,y1 int) (z int, z1 int) {
+	z = x1/y1
+	z1 = x1*y1
+	return
+}
+func main() {
+	var a,b int
+	fmt.Scan(&a,&b)
+	variabel_testa, variabel_testb := test(a,b)
+	variabel_test2a,variabel_test2b := test2(a,b)
+	fmt.Println(variabel_testa,variabel_testb,"\n",variabel_test2a,variabel_test2b)
+}
