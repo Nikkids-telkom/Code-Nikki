@@ -133,3 +133,39 @@ var kebertetanggaan bool
 	}
 	fmt.Println(kebertetanggaan)
 }
+
+
+
+
+
+
+
+
+
+
+////MENSORTIR 4 VARIABEL////
+var a,b,c,d int
+	fmt.Scan(&a,&b,&c,&d)
+
+	if a > b {
+		a,b = b,a 
+	}
+	if b > c {
+		b,c = c,b
+	}
+	if c > d {
+		c,d = d,c 
+	}
+	if a > b {
+		a,b = b,a
+	}
+	if b > c {
+		b,c = c,b
+	}
+	if a > b {
+		a,b = b,a
+	}
+	fmt.Println(a,b,c,d)
+	fmt.Println((b+c)/2)
+	fmt.Println((a+b+c+d)/4)
+  
