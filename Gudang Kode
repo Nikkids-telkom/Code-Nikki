@@ -133,3 +133,13 @@ angka  = input_integer.split(" ")
 angka_sort = angka.sort()
 print(angka[len(angka)-1]+" "+angka[0])
    
+   
+   
+   
+   
+   
+   
+  -------------------KAPITALISASI NAMA----------------
+   s =(input())
+   nama  = s.split(" ")
+   hasil =(nama[0].capitalize(),nama[len(nama)-1].capitalize())
