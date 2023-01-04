@@ -83,3 +83,53 @@ var input,jumlah int
 	  }
 	}
 	fmt.Println("\n",jumlah)
+
+
+
+
+
+
+
+
+
+////KEBERTETANGGAAN ANTAR PULAU/////
+var kebertetanggaan bool
+
+
+
+	fmt.Scanf("%c,%c",&d1,&d2)
+
+	switch {
+	case d1 == 'A':
+		if d2 == 'B' {
+			kebertetanggaan = true
+		} else {
+			kebertetanggaan = false
+		}
+	case d1 == 'B':
+		if d2 == 'A' || d2 == 'C' || d2 == 'D'{
+			kebertetanggaan = true
+		} else {
+			kebertetanggaan = false
+		}
+	case d1 == 'C':
+		if d2 == 'B' || d2 == 'E' {
+			kebertetanggaan = true
+		} else {
+			kebertetanggaan = false
+		}
+	case d1 == 'D' :
+		if d2 == 'B' {
+			kebertetanggaan = true
+		} else {
+			kebertetanggaan = false
+		}
+	case d1 == 'E':
+		if d2 == 'C' {
+			kebertetanggaan = true
+		} else {
+			kebertetanggaan = false
+		}
+	}
+	fmt.Println(kebertetanggaan)
+}
